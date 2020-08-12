@@ -1,0 +1,111 @@
+// 常量
+$themeColor: #409EFF;
+
+
+
+// 文字过长时显示省略号
+@mixin textOverflow { overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+// 清浮动
+@mixin clearfix {
+    &:before,
+    &:after { display: table; visibility: hidden; height: 0; content: ' ';}
+    &:after { clear: both;}
+}
+
+@mixin limitLine($line) {
+	display: -webkit-box;
+    word-break: break-all;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+    -webkit-line-clamp: $line;
+}
+
+// input的placeHolder颜色
+@mixin placeHolderColor($color) {
+	::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+		color: $color;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	   color: $color;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+	   color: $color;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	   color: $color;
+	}
+}
+
+// 背景居中
+@mixin bgCenter() {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+// 圆角
+@mixin borderRadius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+
+// 盒模型
+@mixin boxSizing($sizing) {
+    -webkit-box-sizing:$sizing;
+    -moz-box-sizing:$sizing;
+    -ms-box-sizing:$sizing;
+    -o-box-sizing:$sizing;
+    box-sizing:$sizing;
+}
+
+// 阴影
+@mixin boxShadow($shadow...) {
+	box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+	-webkit-box-shadow: $shadow;
+}
+
+//定位全屏
+@mixin allcover{
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+//定位上下左右居中
+@mixin center {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%); 	/* IE 9 */
+	-moz-transform: translate(-50%, -50%); 	/* Firefox */
+	-webkit-transform: translate(-50%, -50%); /* Safari 和 Chrome */
+	-o-transform: translate(-50%, -50%); 	/* Opera */
+}
+
+//定位上下居中
+@mixin ct {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%); 	/* IE 9 */
+	-moz-transform: translateY(-50%); 	/* Firefox */
+	-webkit-transform: translateY(-50%); /* Safari 和 Chrome */
+	-o-transform: translateY(-50%); 	/* Opera */
+}
+
+//定位左右居中
+@mixin cl {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%); 	/* IE 9 */
+	-moz-transform: translateX(-50%); 	/* Firefox */
+	-webkit-transform: translateX(-50%); /* Safari 和 Chrome */
+	-o-transform: translateX(-50%); 	/* Opera */
+}

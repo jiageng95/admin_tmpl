@@ -1,0 +1,50 @@
+{
+  "name": "admin_tmpl",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "watch": "node ./lc/route.js",
+    "api": "node ./lc/api.js",
+    "build": "vue-cli-service build --mode development",
+    "build:prod": "vue-cli-service build --mode production",
+    "gulp": "cross-env env_config=dev gulp deploy",
+    "gulp:prod": "cross-env env_config=prod gulp deploy",
+    "deploy": "npm run build && npm run gulp",
+    "deploy:prod": "npm run build:prod && npm run gulp:prod"
+  },
+  "gitHooks": {
+    "commit-msg": "node ./lc/git.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "core-js": "^3.6.4",
+    "echarts": "^4.7.0",
+    "element-ui": "^2.13.1",
+    "js-md5": "^0.7.3",
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.6",
+    "vuex": "^3.1.3",
+    "cross-env": "^5.2.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.3.0",
+    "@vue/cli-plugin-eslint": "~4.3.0",
+    "@vue/cli-plugin-router": "~4.3.0",
+    "@vue/cli-plugin-vuex": "~4.3.0",
+    "@vue/cli-service": "~4.3.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "babel-eslint": "^10.1.0",
+    "chalk": "^4.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11",
+    "yorkie": "^2.0.0"
+  }
+}

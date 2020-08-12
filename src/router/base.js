@@ -1,0 +1,33 @@
+// 路由表
+export default {
+    'article/aboutus': resolve => require(['../views/article/aboutus.vue'], resolve),
+    'article/articleCategory': resolve => require(['../views/article/articleCategory.vue'], resolve),
+    'article/articleList/edit': resolve => require(['../views/article/articleList/edit.vue'], resolve),
+    'article/articleList': resolve => require(['../views/article/articleList.vue'], resolve),
+    'article/banner/edit': resolve => require(['../views/article/banner/edit.vue'], resolve),
+    'article/banner': resolve => require(['../views/article/banner.vue'], resolve),
+    'dashboard': resolve => require(['../views/dashboard/dashboard.vue'], resolve),
+    'device/edit': resolve => require(['../views/device/device/edit.vue'], resolve),
+    'device': resolve => require(['../views/device/device.vue'], resolve),
+    'error/404': resolve => require(['../views/error/404.vue'], resolve),
+    'index': resolve => require(['../views/index/index.vue'], resolve),
+    'login': resolve => require(['../views/login/login.vue'], resolve),
+    'recycleCategory/edit': resolve => require(['../views/recycleCategory/recycleCategory/edit.vue'], resolve),
+    'recycleCategory': resolve => require(['../views/recycleCategory/recycleCategory.vue'], resolve),
+    'recycleLog': resolve => require(['../views/recycleLog/recycleLog.vue'], resolve),
+    'systemManage/account': resolve => require(['../views/systemManage/account.vue'], resolve),
+    'systemManage/feedBack/detail': resolve => require(['../views/systemManage/feedBack/detail.vue'], resolve),
+    'systemManage/feedBack': resolve => require(['../views/systemManage/feedBack.vue'], resolve),
+    'systemManage/log/detail': resolve => require(['../views/systemManage/log/detail.vue'], resolve),
+    'systemManage/log': resolve => require(['../views/systemManage/log.vue'], resolve),
+    'systemManage/permission/components/Cascader': resolve => require(['../views/systemManage/permission/components/Cascader.vue'], resolve),
+    'systemManage/permission/detail': resolve => require(['../views/systemManage/permission/detail.vue'], resolve),
+    'systemManage/permission': resolve => require(['../views/systemManage/permission.vue'], resolve),
+    'systemManage/problems/edit': resolve => require(['../views/systemManage/problems/edit.vue'], resolve),
+    'systemManage/problems': resolve => require(['../views/systemManage/problems.vue'], resolve),
+    'systemManage/userInfo': resolve => require(['../views/systemManage/userInfo.vue'], resolve),
+    'userManage/userList/detail': resolve => require(['../views/userManage/userList/detail.vue'], resolve),
+    'userManage/userList': resolve => require(['../views/userManage/userList.vue'], resolve),
+    // 首页
+    '/': resolve => require(['../views/index/index.vue'], resolve)
+}

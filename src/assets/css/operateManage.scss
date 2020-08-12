@@ -1,0 +1,171 @@
+// 意见反馈详情样式
+.feedback-detail{
+    .feedback-container{
+        background: #fff;
+        min-width: 1260px;
+        margin: 20px;
+        padding: 20px 0 20px 0;
+        .info-title{
+            .line{
+                width: 3px;
+                height: 20px;
+                background: #333;
+                display:inline-block;
+                margin-right: 10px;
+                vertical-align:middle;
+            }
+            .title{
+                color: #333;
+                vertical-align:middle;
+            }
+        }
+        // 基础信息
+        .basic-info {
+            min-width: 1260px;
+            margin: 20px 0 0 40px;
+            box-sizing: border-box;
+            .info-data {
+                overflow: hidden;
+                .item{
+                    float: left;
+                    min-width: 120px;
+                    border-top: 2px solid #eee;
+                    background: #f9fafc;
+                }
+                .one-item, .item-is{
+                    min-width: 200px;
+                    float: left;
+                    border: 2px solid #eee;
+                    background: #f9fafc;
+                }
+                .one-item{
+                    height: 86px;
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        margin: 5px  auto;
+                    }
+                    .name{
+                        margin-bottom: 11px;
+                    }
+                    .name,.type{
+                        text-align: center;
+                    }
+                    .type{
+                        height: 25px;
+                        line-height: 25px;
+                        width: 70px;
+                        background: #333;
+                        color: #fff;
+                        border-radius: 5px;
+                        margin: 0 auto;
+                        font-size: 12px;
+                        font-weight: 600;
+                    }
+                }
+                .item-is{
+                    background:#fff;
+                    min-width: 300px;
+                }
+                .item-is{
+                    border-bottom: none;
+                }
+                .all-every{
+                    .is-every{
+                        // width: 100%;
+                        height: 42px;
+                        line-height: 42px;
+                        text-align: center;
+                        border-bottom: 2px solid #eee;
+                        img{
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin-right: 5px;
+                        }
+                        .recommender-user-name{
+                            vertical-align: middle;
+                            color: #333
+                        }
+                    }
+                }
+            }
+        }
+        // 反馈内容
+        .feedback-content{
+            width: 1040px;
+            box-sizing: border-box;
+            display: flex;
+            margin: 0 0 40px 40px;
+            .content-left{
+                width: 200px;
+                border: 2px solid #eeeeee;
+                border-top: none;
+                background: #f9fafc;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .content-right{
+                flex: 1;
+                border-right: 2px solid #eee;
+                border-bottom: 2px solid #eee;
+                .content{
+                    font-size: 12px;
+                    padding: 20px;
+                }
+                .content-img{
+                    width: 150px;
+                    height: 100px;
+                    margin-left: 20px;
+                    display: inline-block;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    cursor: pointer;
+                    .img-content{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        // 处理编辑
+        .information{
+            margin-left: 80px;
+            display: flex;
+            .remark-form{
+                width: 550px;
+            }
+        }
+        .submit-btn{
+            margin: 30px 0 20px 157px;
+        }
+        // 放大图片
+        .bigBg {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            z-index: 9999;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .imgBox {
+            position: absolute;
+            width: 500px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .imgBox-img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

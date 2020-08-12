@@ -1,0 +1,169 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+@import './form.scss';
+@import './analysis.scss';
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+div:focus{
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+//main-container全局样式
+.app-main{
+  flex: 1;
+  padding: 0 20px 20px;
+  min-width: 540px;
+}
+
+.app-main-bottom {
+  text-align: center;
+  padding: 40px 0 30px;
+}
+
+.app-container {
+  padding: 20px 30px 30px;
+  max-width: 1980px;
+  margin: 0 auto;
+}
+
+.app-board {
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 1px 4px 0 rgba(12,12,13,0.10);
+  margin-top: 20px;
+}
+
+.app-board:first-child {
+  margin-top: 0;
+}
+
+.pagination-container {
+  margin-top: 30px;
+  text-align: right;
+}
+
+.filter-container {
+  padding-bottom: 10px;
+  width: 100%;
+  .filter-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px;
+  }
+}
+
+h3 {
+  border-bottom: 1px solid gray;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+.no_pic{
+  width: 30px;
+}
+
+.overflow-2line {
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.box-shadow {
+  box-shadow: 0 1px 4px 0 rgba(12,12,13,0.10);
+}
+
+.bg-center {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.el-loading-mask {
+  z-index: 1998;
+}
+
+
+/* 文字 */
+
+.Large-Title {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.Title {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.Caption {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.sCaption {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.color-g90 {
+  color: rgba(0,0,0,0.85);
+}
+
+.color-g80 {
+  color: rgba(0,0,0,0.65);
+}
+
+.color-g40 {
+  color: rgba(0,0,0,0.45);
+}
+
+.weight-medium {
+  font-weight: 500;
+}

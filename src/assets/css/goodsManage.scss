@@ -1,0 +1,69 @@
+.classManage{
+    display: flex;
+    .firstClass,.secondClass,.thirdClass{
+        padding: 20px;
+        border: 1px solid $themeColor;
+        border-radius: 10px;
+        width: 344px;
+        min-height: 500px;
+        margin-right: 20px;
+    }
+    .thirdClass{
+        margin-right: 0px;
+    }
+    .first-header{
+        display: flex;
+        .first-add,.search-item{
+            flex: 1;
+        }
+        .search-item{
+            display: flex;
+            .search-txt img{
+                width: 20px;
+                height: 20px;
+                position: relative;
+                top: 5px;
+                right: 5px;
+            }
+        }
+    }
+    .first-box{
+        padding: 10px 0;
+        .first-box-head{
+            font-size: 16px;
+            background: #f9f9f9;
+            color: #373334;
+            border: 1px solid#e7e6eb;
+            padding: 10px;
+            .operation,.name{
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .first-box-content{
+            border-left: 1px solid#e7e6eb;
+            border-right: 1px solid#e7e6eb;
+            border-bottom: 1px solid#e7e6eb;
+            padding: 5px 10px;
+        }
+        .first-box-head,.first-box-content{
+            display: flex;
+            .sort,.operation{
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .name{
+                flex: 2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .operation button{
+                font-size: 18px;
+                color: $themeColor;
+            }
+        }
+    }
+}

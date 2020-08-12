@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/*
+ * 总入口
+ */
+// 初始样式
+@import "./base.scss";
+// 公共样式
+@import "./common.scss";
+// 订单
+@import "./order.scss";
+// 用户管理
+@import "./userManage.scss";
+// 商品管理
+@import "./goodsManage.scss";
+// 运营管理
+@import "./operateManage.scss";

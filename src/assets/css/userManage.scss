@@ -1,0 +1,13 @@
+#userDetail{
+    .item-box{
+        display: flex;
+        flex-direction: column;
+        .item-show{
+            margin-bottom: 12px;
+            text-align: left;
+        }
+        .item-show:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
